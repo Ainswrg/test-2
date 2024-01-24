@@ -1540,7 +1540,7 @@
             if (typeof this.canSetCookieResult === "boolean")
                 return this.canSetCookieResult;
             try {
-                Cookie.set(TEST_COOKIE_NAME, TEST_COOKIE_VALUE, { SameSite: "None", Secure: true, Domain: ".adriver.ru" });
+                Cookie.set(TEST_COOKIE_NAME, TEST_COOKIE_VALUE, { SameSite: "None", Secure: true, Domain: ".github.com" });
                 var isCookieSet = Cookie.get(TEST_COOKIE_NAME) === TEST_COOKIE_VALUE;
                 Cookie.delete(TEST_COOKIE_NAME);
                 this.canSetCookieResult = isCookieSet;
